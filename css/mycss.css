@@ -1,0 +1,10 @@
+ol.fixedUnderNav{
+  position: fixed;
+  top: 50px;
+  width: 100%;
+  z-index:3;
+}
+
+.cursor-pointer{
+  cursor:pointer;
+}
