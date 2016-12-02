@@ -9,7 +9,7 @@
         <cfset response = {
           "fname" = #patientDetailQuery.pfname#,
           "lname" = #patientDetailQuery.plname#,
-          "dob" = #patientDetailQuery.pdob#
+          "dob" = #DateFormat(patientDetailQuery.pdob, "mm/dd/yyyy")#
           }>
         <cfreturn response>
     </cffunction>

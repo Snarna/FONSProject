@@ -21,3 +21,26 @@ function responseErrMsg($msg){
       $("#responsediv").removeClass("animated shake");
   });
 }
+
+function fadeInElement(elm){
+  $(elm).hide();
+  $(elm).fadeIn();
+}
+
+function redBackgroundElm(elm){
+  $(elm).animate({
+    backgroundColor: "#ff2121"
+  }, 200);
+  $(elm).animate({
+    backgroundColor: ""
+  }, 200);
+}
+
+function greenBackgroundElm(elm){
+  $(elm).animate({
+    backgroundColor: "#42f442"
+  }, 200);
+  $(elm).animate({
+    backgroundColor: ""
+  }, 200);
+}

@@ -5,7 +5,7 @@
 
         <cfif #by# EQ "id">
             <cfquery name="patientQuery" datasource="emrdb">
-                SELECT * FROM patientsData WHERE patientid = '#searchInput#'
+                SELECT * FROM patientsData WHERE patientid = '#searchInput#' OR pfname = '#searchInput#' OR plname = '#searchInput#'
             </cfquery>
         </cfif>
         <cfset var response=''>
